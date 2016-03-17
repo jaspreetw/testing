@@ -1,0 +1,5 @@
+SwitchNWalk.ipa
+*.class
+target
+test-output
+.*!/.gitignore

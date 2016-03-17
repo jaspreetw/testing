@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false">
+<parameter name="receiveScreenText" value="RECEIVE DATA FROM" />
+<parameter name="sendScreenText" value="SEND DATA TO" />
+
+
+<test name="Test">
+     <packages>
+			<package name="com.rjil.snw.mobileAutomation.tests.ios.*" />
+		</packages>
+</test>
+</suite>
