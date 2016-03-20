@@ -12,6 +12,8 @@ public class HomePage {
 	private RemoteWebDriver driver;
 	SendReceiveDataPage sendReceiveDataPage;
 
+
+	
 	@iOSFindBy(name = "Start_Button_Send")
 	private MobileElement send;
 	
@@ -27,6 +29,12 @@ public class HomePage {
 	@iOSFindBy(name="Start_Label_Version")
     private MobileElement versionNumber;
 	
+	@iOSFindBy(name="Start_Label_AppInstallation")
+	private MobileElement appInstallationDetails;
+	
+	@iOSFindBy(name="Back")
+	private MobileElement back;
+	
 	@iOSFindBy(xpath="//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]")
     private MobileElement termsAndConditionsPage;
 	
@@ -36,6 +44,21 @@ public class HomePage {
 		sendReceiveDataPage = new SendReceiveDataPage(driver);
 	}
 
+	public boolean isHomePageVisible()
+	{
+		return termsAndCondition.isDisplayed();
+	}
+	
+	public String getAppInstallationInfo()
+	{
+		return appInstallationDetails.getText();
+	}
+	
+	public String getVersionNumber()
+	{
+		return versionNumber.getText();
+	}
+	
 	public SendReceiveDataPage clickOnSend() {
 		this.send.tap(1, 3);
 		return sendReceiveDataPage;
@@ -45,6 +68,11 @@ public class HomePage {
 	public String getDeviceName()
 	{
 		return deviceName.getText();
+	}
+	
+	public void clickOnBack()
+	{
+		back.tap(1, 3);
 	}
 	
 	public boolean isTermsAndConditionsDisplayed()

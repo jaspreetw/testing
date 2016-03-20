@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false">
+<parameter name="username" value="snwwebautomation1@switchnwalk.com" />
+<parameter name="password" value="RILjio@2017" ></parameter>
+<!-- <parameter name="appName" value="Kid Coloring" /> -->
+<!-- <parameter name="appName" value="Makemytrip" /> -->
+<parameter name="appVersion" value="1.5.2" ></parameter>
+<parameter name="appPackage" value="com.vanluyen.KidColoring" ></parameter>
+<parameter name="iconFileName" value="Kid Coloring.jpg" />
+<parameter name="appFileName" value="Kid Coloring_1.5.2.apk" ></parameter>
+<parameter name="admin_username" value="rilcloud5@gmail.com" />
+<parameter name="FireFoxPath" value="C:\Program Files (x86)\\Mozilla Firefox\\firefox.exe" />
+<parameter name="admin_password" value="RILjio@2015" ></parameter>
+<parameter name="partnerName" value="Nibha2 Sanghai" ></parameter>
+<parameter name="invalidappPackage" value="com.vanluyen.KidColoring_invalid" ></parameter>
+<parameter name="invalidappFileName" value="Think Number - invalid.apk" ></parameter>
+
+<parameter name="CampaignName" value="sNw Auto New Campaign" ></parameter>
+
+<listeners>
+    <listener class-name="com.SnWWeb.ExtentReporterNG" />
+</listeners>
+
+<test name="Test">
+     <classes>
+         <class name="com.SnWWeb.WebTests.PartnerDashboard_P1_Tests"/>
+     </classes>
+</test>
+</suite>
